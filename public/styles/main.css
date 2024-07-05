@@ -1,0 +1,191 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+*::selection {
+    background-color: slateblue;
+    /* color: white; */
+}
+
+.h1 {
+    margin-left: 10px;
+    color: white;
+    margin-top: 5px;
+}
+
+.owner_name, .readifyLink, .udemyLink {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.owner_name:hover, .readifyLink:hover, .udemyLink:hover {
+    color: slateblue;
+    text-decoration: underline;
+}
+
+h2 {
+    color: slateblue;
+}
+
+.welcome_p, .about_p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.about_p {
+    font-size: 20px;
+    margin-left: 8%;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+.modalContainer {
+    background-color: white;
+}
+
+.boldWhite {
+    font-weight: bolder;
+}
+
+.form-select {
+    width: 100px;
+    margin-left: auto;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sortBtn {
+    background-color: gray;
+}
+
+.linksInP {
+    color: slateblue;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.linksInP:hover {
+    text-decoration: underline;
+}
+
+.hr-custom {
+    border-width: 50px;
+}
+
+/* .modalFooter {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.modalFooter button {
+    margin: 20px;
+}
+
+.modal {
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    height:auto;
+    width:auto;
+    position:fixed;
+    top:50%;
+    left:35%;
+    margin-top:-100px;
+} */
+
+.isbnInput {
+    margin-left: 40%;
+}
+
+#isbn {
+    margin-top: 10%;
+}
+
+.dropdown-item {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.bookDetail {
+    color: wheat;
+}
+
+.bookTitle {
+    color: darkred;
+}
+
+.detailTitle {
+    color: coral;
+}
+
+.portfolio {
+    border: 2px solid black;
+    background-color: beige;
+    color: black;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.portfolio * {
+    background-color: beige;
+}
+
+.portfolioH1 {
+    text-align: center;
+}
+
+.myIntro {
+    color: black;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+
+.programmericon {
+    height: 16px;
+}
+
+.section2 {
+    display: flex;
+    margin-top: 4%;    
+}
+
+.section2 * {    
+    text-align: center;
+    color: black;
+}
+
+.feature {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;        
+    
+}
+
+.feature * {
+    background-color: white;
+}
+
+.feature p {
+    color: black;
+}
+
+.feature-icon {
+    border: 1px solid black;
+    border-radius: 10px;  
+    padding: 15px;
+    background-color: brown;  
+}

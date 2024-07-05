@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              <a href="./index.ejs" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                  </svg>
+                <span class="fs-4 h1">Readify</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./index.ejs" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./about.ejs" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./owner.ejs" class="nav-link">Owner</a></li>
+                <li class="nav-item"><a href="./contact.ejs" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="./comments.ejs" class="nav-link">Comments</a></li>
+              </ul>
+            </header>
+            <a href="./owner.ejs" class="owner_name" ><h1>Tanveer Qasim</h1></a>
+            <h2>Books I’ve read</h2>
+            <p class="welcome_p">Welcome to Readify Book Reviews! Here, you'll discover reviews of the books I, Tanveer Qasim, have read. This page will continuously update as I explore more titles, so be sure to bookmark it for future visits. Happy reading!
+                <br>
+                <br>
+                You can sort book reviews by <span class="boldWhite">title</span>, <span class="boldWhite">newest</span> or <span class="boldWhite">best</span> by this options, <br> 👇        
+                  <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sort By
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/title">Title</a></li>
+                      <li><a class="dropdown-item" href="/newest">Newest</a></li>
+                      <li><a class="dropdown-item" href="/best">Best</a></li>
+                    </ul>
+                  </div>                         
+                  <br>
+                  <br>
+                  <p class="welcome_p">You can <span class="boldWhite">add</span>, <span class="boldWhite">edit</span> and <span class="boldWhite">delete</span> reviews.</p>
+                  <br>
+                  <!-- <a href="./addPass.ejs" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Add</a> -->
+                  <a href="./add.ejs" class="btn btn-primary">Add</a>
+                  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Enter password in order to add book review</h1>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Password:</label>
+                              <input type="password" name="addPass" class="form-control" id="recipient-name" placeholder="Password...">
+                            </div>              
+                          </form>
+                        </div>
+                        <div class="modalFooter">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                          <form action="/add" method="post">
+                          <button type="submit" class="btn btn-primary">Next</button>
+                        </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <br>
+                  <br>
+                  <p class="welcome_p">Please <a class="linksInP" href="./comments.ejs">comment</a> us and share your ideas to improve <span>Readify</span>. You can also <a class="linksInP" href="./contact.ejs">contact</a>.</p>
+            </p>
+        </div>
+        <div class="container books d-flex flex-wrap py-3 mb-4  border-top">
+          <% books.forEach((book) => { %> 
+            <div class="book" style="margin-left: 10%; margin-top: 10%;">
+              <img style="float: left; margin-right: 2%;" src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" />
+              <div style="display: flex;">
+              <h3 class="bookTitle"><%= book.title %></h3>
+              <form action="/edit" method="post">
+               <button type="submit" class="btn" value="<%= book.id %>" name="editBtn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+              </svg></button></form>
+              <form action="/delete" method="post"><button name="deleteBtn" type="submit" class="btn" value="<%= book.id %>"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+              </svg></button></form>
+            </div>
+              <p class="bookDetail"><span class="detailTitle">Review Date:</span> <%= book.review_date.toDateString() %> <br> <span class="detailTitle">Written by</span> <%= book.author %> <br> <span class="detailTitle">ISBN:</span> <%= book.isbn %> <br> <span class="detailTitle">How strongly I recommend it:</span> <%= book.rating %>/10</p>
+              <p style="width: 80%; font-size: 20px; text-wrap: wrap;"><%= book.review %></p>
+            </div>
+          <% }); %>
+        </div>
+        <div class="container" style="margin-top: 5%;">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="./index.ejs" class="nav-link px-2" style="color: white;">Home</a></li>
+              <li class="nav-item"><a href="./about.ejs" class="nav-link px-2" style="color: white;">About</a></li>
+              <li class="nav-item"><a href="./owner.ejs" class="nav-link px-2" style="color: white;">Owner</a></li>
+              <li class="nav-item"><a href="./contact.ejs" class="nav-link px-2" style="color: white;">Contact</a></li>
+              <li class="nav-item"><a href="./comments.ejs" class="nav-link px-2" style="color: white;">Comments</a></li>
+            </ul>
+            <p class="text-center" style="color: white;">© <%= new Date().getFullYear() %> Readify, Book Notes</p>
+          </footer>
+        </div>
+    </header>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
